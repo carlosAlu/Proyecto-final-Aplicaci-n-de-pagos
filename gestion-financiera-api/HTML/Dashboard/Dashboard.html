@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard del Usuario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <h1>Bienvenido al Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Transferencias</a></li>
+                <li><a href="#">Agregar Tarjetas</a></li>
+                <li><a href="#">Realizar Pagos</a></li>
+                <li><a href="#" id="logout">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard-main">
+        <section class="dashboard-balance">
+            <h2>Saldo Actual</h2>
+            <p id="current-balance">$0.00</p>
+        </section>
+
+        <section class="dashboard-history">
+            <h2>Historial de Movimientos</h2>
+            <ul id="transaction-history">
+                <!-- Los movimientos se cargarán aquí dinámicamente -->
+                <li>No hay transacciones aún.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

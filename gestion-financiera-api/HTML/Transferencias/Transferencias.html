@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transferencias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <h1>Realizar Transferencia</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="movimientos.html">Movimientos</a></li>
+                <li><a href="#" id="logout">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="transfer-main">
+        <section class="transfer-section">
+            <h2>Formulario de Transferencia</h2>
+            <form id="transfer-form">
+                <div class="input-group">
+                    <label for="recipient-email">Correo del Destinatario:</label>
+                    <input type="email" id="recipient-email" name="recipientEmail" required>
+                </div>
+                <div class="input-group">
+                    <label for="transfer-amount">Monto a Transferir:</label>
+                    <input type="number" id="transfer-amount" name="transferAmount" min="1" required>
+                </div>
+                <div class="input-group">
+                    <label for="transfer-message">Mensaje (Opcional):</label>
+                    <textarea id="transfer-message" name="transferMessage" rows="3"></textarea>
+                </div>
+                <button type="submit">Realizar Transferencia</button>
+            </form>
+            <div id="transfer-status"></div>
+        </section>
+    </main>
+
+    <script src="transferencias.js"></script>
+</body>
+</html>

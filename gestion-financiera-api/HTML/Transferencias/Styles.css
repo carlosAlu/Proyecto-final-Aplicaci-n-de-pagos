@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.input-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+/* Estilos del Header */
+.dashboard-header {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.dashboard-header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.dashboard-header nav ul li {
+    display: inline;
+}
+
+.dashboard-header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dashboard-header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos del Main */
+.dashboard-main {
+    padding: 20px;
+}
+
+.dashboard-balance, .dashboard-history {
+    margin-bottom: 20px;
+}
+
+.dashboard-history ul {
+    list-style: none;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.dashboard-history ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.dashboard-history ul li:last-child {
+    border-bottom: none;
+}
+/* Transferencias */
+.transfer-main {
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.transfer-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.transfer-section .input-group {
+    margin-bottom: 15px;
+}
+
+#transfer-status {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}

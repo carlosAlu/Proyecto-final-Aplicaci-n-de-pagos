@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Movimientos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <h1>Historial de Movimientos</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="#" id="logout">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="movements-main">
+        <!-- Filtros -->
+        <section class="filters">
+            <h2>Filtrar Movimientos</h2>
+            <form id="filter-form">
+                <div class="input-group">
+                    <label for="start-date">Fecha Inicial:</label>
+                    <input type="date" id="start-date" name="startDate">
+                </div>
+                <div class="input-group">
+                    <label for="end-date">Fecha Final:</label>
+                    <input type="date" id="end-date" name="endDate">
+                </div>
+                <div class="input-group">
+                    <label for="transaction-type">Tipo:</label>
+                    <select id="transaction-type" name="type">
+                        <option value="all">Todos</option>
+                        <option value="income">Ingreso</option>
+                        <option value="expense">Gasto</option>
+                    </select>
+                </div>
+                <button type="submit">Aplicar Filtros</button>
+            </form>
+        </section>
+
+        <!-- Listado de Movimientos -->
+        <section class="movements-list">
+            <h2>Movimientos</h2>
+            <ul id="transaction-list">
+                <!-- Las transacciones se cargarán dinámicamente aquí -->
+                <li>No hay movimientos que mostrar.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="movimientos.js"></script>
+</body>
+</html>

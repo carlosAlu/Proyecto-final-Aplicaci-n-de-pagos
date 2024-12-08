@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Tarjetas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <h1>Agregar Tarjeta</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="movimientos.html">Movimientos</a></li>
+                <li><a href="transferencias.html">Transferencias</a></li>
+                <li><a href="#" id="logout">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="card-main">
+        <section class="card-section">
+            <h2>Formulario para Agregar Tarjetas</h2>
+            <form id="card-form">
+                <div class="input-group">
+                    <label for="card-number">Número de Tarjeta:</label>
+                    <input type="text" id="card-number" name="cardNumber" maxlength="16" placeholder="1234 5678 9101 1121" required>
+                </div>
+                <div class="input-group">
+                    <label for="expiry-date">Fecha de Vencimiento:</label>
+                    <input type="month" id="expiry-date" name="expiryDate" required>
+                </div>
+                <div class="input-group">
+                    <label for="cvv">Código de Seguridad (CVV):</label>
+                    <input type="text" id="cvv" name="cvv" maxlength="3" placeholder="123" required>
+                </div>
+                <button type="submit">Agregar Tarjeta</button>
+            </form>
+            <div id="card-status"></div>
+        </section>
+    </main>
+
+    <script src="agregar_tarjetas.js"></script>
+</body>
+</html>
